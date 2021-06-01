@@ -1,0 +1,8 @@
+/node_modules/
+/public/build/
+.cache/
+temp/
+
+.DS_Store
+*.log
+*.cache

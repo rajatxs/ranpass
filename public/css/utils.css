@@ -1,0 +1,16 @@
+.text-weight-300 {
+   font-weight: 300;
+}
+.text-weight-400 {
+   font-weight: 400;
+}
+.text-weight-500 {
+   font-weight: 500;
+}
+.text-weight-600 {
+   font-weight: 600;
+}
+
+.text-primary {
+   color: var(--primary);
+}

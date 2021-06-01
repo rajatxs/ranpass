@@ -1,0 +1,125 @@
+@import url("./utils.css");
+
+* {
+   -webkit-tap-highlight-color: transparent;
+   box-sizing: content-box;
+}
+
+html {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   --primary: #4333FF;
+   --primary-dark: #1200da;
+   --primary-fr: white;
+
+   --secondary: rgb(101, 255, 229);
+   --secondary-fr: black;
+   --bg: white;
+
+   --success: rgb(6, 204, 6);
+   --success-fr: white;
+
+   --error: rgb(255, 62, 62);
+   --error-fr: white;
+
+   --fr: #222;
+   --fr-1: #444;
+   --fr-2: #777;
+   --fr-3: #999;
+   --fr-4: #CCC;
+   --fr-5: #EEE;
+
+   margin: 0;
+   padding: 0;
+   width: 100vw;
+   height: 100vh;
+   font-family: 'Inter', Arial, sans-serif;
+   background-color: var(--bg);
+   color: var(--fr);
+}
+
+a {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+p {
+   line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   padding: 8px;
+   font-family: 'Poppins', Arial, sans-serif;
+}
+
+::selection {
+   background-color: var(--secondary);
+   color: var(--secondary-fr);
+}
+
+button {
+   margin: 4px;
+   height: 40px;
+   width: 180px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   font-family: inherit;
+   font-size: 15px;
+   border-radius: 25px;
+   border: none;
+   outline: none;
+   background-color: var(--primary);
+   color: var(--primary-fr);
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   transition: background-color 90ms linear;
+}
+
+button.success {
+   background-color: var(--success);
+   color: var(--success-fr);
+}
+button.success svg.icon {
+   fill: var(--success-fr);
+}
+button.error {
+   background-color: var(--error);
+   color: var(--error-fr);
+}
+button.error svg.icon {
+   fill: var(--error-fr);
+}
+
+button:hover {
+   opacity: 0.8;
+}
+button svg.icon {
+   width: 18px;
+   height: 18px;
+   margin-right: 8px;
+   fill: var(--primary-fr);
+}
+button:disabled {
+   pointer-events: none;
+   background-color: var(--fr-5);
+   color: var(--fr-2);
+}
+button:disabled svg.icon {
+   fill: var(--fr-2);
+}
+
+.input-container {
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
