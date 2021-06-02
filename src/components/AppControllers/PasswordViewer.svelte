@@ -79,7 +79,7 @@
    height: inherit;
    justify-content: center;
    align-items: center;
-   width: 48px;
+   width: 45px;
    border-radius: inherit;
    background-color: transparent;
    cursor: pointer;
@@ -91,27 +91,17 @@
    fill: var(--fr-3);
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
    #password-viewer {
-      width: inherit;
-      padding: 1px;
+      width: 100%;
+      justify-content: center;
    }
    #password-output {
-      width: auto;
-      font-size: 1.1rem;
-      letter-spacing: 1.3px;
+      width: 90%;
+      padding-left: 8px;
    }
    #password-regenerate-control {
-      width: 40px;
-   }
-}
-
-@media screen and (max-width: 290px) {
-   #password-viewer {
-      width: 250px;
-   }
-   #password-output {
-      width: 190px;
+      width: 20%;
    }
 }
 </style>

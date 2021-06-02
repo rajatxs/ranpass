@@ -1,4 +1,4 @@
-const storageId = "shell-v1";
+const storageId = "shell-v1.1";
 const assets = [
    "/",
    "/index.html",

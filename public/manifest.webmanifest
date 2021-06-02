@@ -3,7 +3,7 @@
    "short_name": "Ranpass",
    "description": "Online random password generator",
    "orientation": "portrait",
-   "display": "minimal-ui",
+   "display": "standalone",
    "start_url": "/",
    "background_color": "#FFFFFF",
    "theme_color": "#527DFF",

@@ -145,9 +145,8 @@
 
 <style>
 @media screen and (max-width: 480px) {
-   #app-controllers {   
-      padding-left: 12px;
-      padding-right: 12px;
+   #app-controllers {
+      width: 86%;
    }
 }
 </style>
