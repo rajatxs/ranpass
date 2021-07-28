@@ -134,7 +134,7 @@
             <!-- Symbols Checkbox -->
             <AppCheckbox 
                key="symbols"
-               label={"symbols"}
+               label={"Symbols"}
                checked={options.symbols}
                on:change={handleOptionChanges} />
 
