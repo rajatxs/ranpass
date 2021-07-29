@@ -15,14 +15,17 @@ body {
    --primary-dark: #1200da;
    --primary-fr: white;
 
-   --secondary: rgb(101, 255, 229);
+   --secondary: #65ffe5;
    --secondary-fr: black;
    --bg: white;
 
-   --success: rgb(6, 204, 6);
+   --selection: var(--secondary);
+   --selection-fr: var(--secondary-fr);
+
+   --success: #06cc06;
    --success-fr: white;
 
-   --error: rgb(255, 62, 62);
+   --error: #ff3e3e;
    --error-fr: white;
 
    --fr: #222;
@@ -31,7 +34,23 @@ body {
    --fr-3: #999;
    --fr-4: #CCC;
    --fr-5: #EEE;
+}
 
+@media (prefers-color-scheme: dark) {
+   body {
+      --bg: #111;
+      --fr: white;
+
+      --fr: #FFF;
+      --fr-1: #EEE;
+      --fr-2: #AAA;
+      --fr-3: #999;
+      --fr-4: #777;
+      --fr-5: #444;
+   }
+}
+
+body {
    margin: 0;
    padding: 0;
    width: 100vw;
@@ -59,8 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-   background-color: var(--secondary);
-   color: var(--secondary-fr);
+   background-color: var(--selection);
+   color: var(--selection-fr);
 }
 
 button {

@@ -31,7 +31,7 @@
          readonly
          on:click={handleOutputClick} />
    </label>
-   <span on:click={handleRegeneration} id="password-regenerate-control">
+   <span title="Regenerate Password" on:click={handleRegeneration} id="password-regenerate-control">
       <svg 
          xmlns="http://www.w3.org/2000/svg" 
          fill="currentColor" 
@@ -73,6 +73,8 @@
    -ms-user-select: text;
    -moz-user-select: text;
    user-select: text;
+   background-color: var(--bg);
+   color: var(--fr);
 }
 #password-regenerate-control {
    display: inline-flex;
